@@ -1,0 +1,124 @@
+﻿.div-container {
+    margin: 5%;
+    border: 1px solid black;
+}
+
+.div-data-container {
+    margin-top: 5%;
+    margin-right: 10%;
+    margin-left: 17%;
+    margin-bottom: 5%;
+    position: relative;
+    word-wrap: break-word;
+    opacity: 1;
+}
+
+.form-container {
+    margin-left: 5%;
+    width: 45%;
+}
+
+.header {
+    background-color: #01DFA5;
+    border-bottom: 1px solid black;
+    font-size: 17px;
+}
+
+.footer {
+    background-color: #01DFA5;
+    border-top: 1px solid black;
+    font-size: 12px;
+}
+
+.img-container {
+    width: 110px;
+    height: 110px;
+}
+
+.div-border {
+    border-right: 2px solid #01DFA5;
+    position: relative;
+}
+
+@media (max-width: 990px) {
+    .div-border {
+        border: none;
+    }
+
+    .div-border-2 {
+        border-top: 2px solid #01DFA5;
+    }
+}
+
+.div-scroll {
+    height: 270px;
+    overflow: auto;
+    overflow-x: auto;
+    padding-right: 20px;
+}
+
+.table-data-row {
+    font-size: small;
+    word-break: break-all;
+    background-color: #ECF6CE;
+}
+
+.fade-in {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+    background-color: white;
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

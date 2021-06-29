@@ -1,0 +1,131 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+    <title>Student Enrollment Form</title>
+</head>
+<body>
+    <div class="container div-container p-0">
+        <div id="header" class="container-fluid mb-3 header text-center">
+            <label for="header" class="text-white fw-bold m-2">Student Enrollment Form</label>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 form-container div-border">
+                <form>
+                    <table class="table table-borderless">
+                        <tr>
+                            <td>
+                                <label for="name">Name</label>
+                            </td>
+                            <td>
+                                <input type="text" id="name" class="border-1 rounded" onblur="ValidateName()" />
+                                <span id="nameError" style="display: none; color: red; font-size: 10px;">Name should contain Alphabets and spaces</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="email">Email</label>
+                            </td>
+                            <td>
+                                <input type="email" id="email" class="border-1 rounded" onblur="ValidateEmail()" />
+                                <span id="emailError" style="display: none; color: red; font-size: 10px;">Please type valid Email Address</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="website">Website</label>
+                            </td>
+                            <td>
+                                <input type="text" id="website" class="border-1 rounded" onblur="ValidateWebsite()" />
+                                <span id="websiteError" style="display: none; color: red; font-size: 10px;">Please type valid Website Address</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="image">Image Link</label>
+                            </td>
+                            <td>
+                                <input type="text" id="imglink" class="border-1 rounded" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="gender">Gender</label>
+                            </td>
+                            <td>
+                                <input type="radio" id="male" name="gender" value="Male" class="form-check-input" checked />
+                                <label for="male">Male</label><br>
+                                <input type="radio" id="female" name="gender" value="Female" class="form-check-input" />
+                                <label for="female">Female</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="skills">Skills</label>
+                            </td>
+                            <td>
+                                <input type="checkbox" id="java" name="java" value="Java" class="form-check-input m-lg-1" />
+                                <label for="java">Java</label>
+                                <input type="checkbox" id="html" name="html" value="HTML" class="form-check-input m-lg-1" />
+                                <label for="html">HTML</label>
+                                <input type="checkbox" id="css" name="css" value="CSS" class="form-check-input m-lg-1" />
+                                <label for="css">CSS</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <input type="button" class="btn btn-primary" value="Enroll Student" onclick="AddStudent()" />
+                            </td>
+                            <td align="left">
+                                <button type="reset" class="btn btn-danger">Clear</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+
+            <div class="col-lg-6 div-border-2">
+                <!-- Show table data the form is submitted -->
+                <div class="text-center">
+                    <label for="enrol" class="fw-bold">Enrolled Students</label>
+                </div>
+                <div class="font-monospace div-data-container div-scroll">
+                    <table id="studentList" border="1" class="table table-bordered" style="border-color: #86B404;">
+                        <thead style="background-color: #A5DF00" class="text-white">
+                        <th>Description</th>
+                        <th>Image</th>
+                        </thead>
+                        <tbody id="tableBody">
+                            <!-- Remove this demo data -->
+                            <tr id="tableRow" class="table-data-row">
+                                <td>
+                                    <label for="name" class="fw-bold">Jhon Doe</label><br />
+                                    <label for="gender">Male</label><br />
+                                    <label for="email">jhon.doe@gmail.com</label><br />
+                                    <a href="https://www.facebook.com" target="_blank">www.jhondoe.com</a>
+                                    <br />
+                                    <label for="skills">Java, HTML</label><br />
+                                </td>
+                                <td width="10px">
+                                    <div class="img-container">
+                                        <img src="images/defaulticon.jpg" width="110px" height="110px" />
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-5 footer text-center">
+            <label for="copyright" class="text-white fw-bold">Copyright 2020-2021 by freshers training</label>
+        </div>
+    </div>
+</body>
+</html>
